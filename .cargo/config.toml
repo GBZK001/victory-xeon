@@ -1,0 +1,7 @@
+# Este PC: Xeon E5-2670 v3 (Haswell, AVX2). Codigo gerado para este processador:
+# copias, hashes e comparacoes da thread de envio mais rapidas. O exe nao roda em CPU sem AVX2.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-cpu=native"]
+
+[alias]
+xtask = "run --quiet --package xtask --"
